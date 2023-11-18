@@ -5,18 +5,35 @@
   align-items: center;
   justify-content: center;
   gap: 11px;
-  padding: 7px 33px;
+  padding: 6px 16px;
   width: fit-content;
   cursor: pointer;
   color: #fff !important;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
   outline: 0;
   line-height: normal;
+  &[disabled] {
+    background-color: #EAEAEA;
+    color: rgba(0, 0, 0, 0.26) !important;
+    pointer-events: none;
+  }
   &.xl {
     padding-left: 93px;
       padding-right: 93px;
   }
+}
+.main-btn-2 {
+  background-color: $main-color;
+  color: white !important;
+  display: flex;
+  align-items: center;
+      border-radius: 4px;
+  width: fit-content;
+  justify-content: center;
+  padding: 6px 16px;
+  font-size: 14px;
+  gap: 8px;
 }
 
 .btn-transparent {
@@ -38,3 +55,4 @@
     color: $main-color;
   }
 }
+

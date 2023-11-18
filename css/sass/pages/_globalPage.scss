@@ -29,3 +29,180 @@ input:focus,
 select:focus {
   outline: none;
 }
+
+// app sidebar
+.app-sidebar {
+  padding-block-start: 64px;
+  height: 100vh;
+  display: flex;
+  .sidebar {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 400px;
+    border-inline-end: 1px solid rgba(0, 0, 0, 0.12);
+    transition: $sm-transition;
+    border-radius: 8px;
+    background-color: #fff;
+    .toggle-side {
+      position: absolute;
+      inset-inline-start: 100%;
+      width: 30px;
+      top: 11px;
+      height: 40px;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      padding: 11px;
+      background-color: #fff;
+      border-top-left-radius: 110px;
+      border-bottom-left-radius: 110px;
+    }
+    .item-side {
+      padding: 17px 18px;
+      .title-side {
+        margin: 0;
+        font-size: 19px;
+        color: $text-color1;
+      }
+    }
+    .list-side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      overflow-y: auto;
+      padding: 16px 6px;
+      .accordion-item {
+        overflow: hidden;
+        border: 0;
+        box-shadow: 0px 3px 9px rgba(0, 0, 0, 8.3%);
+        border-radius: 8px;
+        .accordion-header {
+          padding: 0;
+          .icon-item {
+            width: 30px;
+            border: $main-color dashed 2px;
+            height: 30px;
+            border-radius: 50%;
+            margin-inline-end: 18px;
+          }
+          .accordion-button {
+            box-shadow: none;
+            padding: 16px;
+            &:not(.collapsed) {
+              color: $main-color;
+              background-color: $main-color-light;
+            }
+          }
+        }
+        .accordion-body {
+          padding: 16px;
+          .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .item-content {
+              overflow: hidden;
+              border: 0;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              padding: 16px;
+              box-shadow: 0px 3px 9px rgba(0, 0, 0, 8.3%);
+              border-radius: 8px;
+              &.active {
+                border: 3px solid $main-color;
+              }
+              .icon {
+                color: $main-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .app-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px 52px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .content {
+      flex: 1;
+    }
+  }
+  @include maxWidth(md) {
+    .sidebar {
+      width: 0px;
+      & *:not(.toggle-side, .toggle-side *) {
+        visibility: hidden;
+      }
+    }
+    .app-content {
+      padding: 12px;
+    }
+  }
+  &.active {
+    .sidebar {
+      width: 75px;
+      .item-side {
+        visibility: hidden;
+        position: absolute;
+      }
+      .main-hr {
+        visibility: hidden;
+        position: absolute;
+      }
+      .accordion-button {
+        &::after {
+          visibility: hidden;
+          position: absolute;
+        }
+        & *:not(.icon-item) {
+          visibility: hidden;
+          position: absolute;
+        }
+        .icon-item {
+          margin-inline-end: 0 !important;
+        }
+      }
+    }
+    @include maxWidth(md) {
+      .sidebar {
+        width: 75%;
+        position: fixed;
+        inset-inline-start: 0;
+        height: calc(100vh - 64px);
+        bottom: 0;
+        & *:not(.toggle-side, .toggle-side *) {
+          visibility: visible;
+        }
+        .item-side {
+          visibility: visible;
+          position: unset;
+        }
+        .main-hr {
+          visibility: visible;
+          position: unset;
+        }
+        .accordion-button {
+          &::after {
+            
+            visibility: visible;
+            position: unset;
+          }
+          & *:not(.icon-item) {
+            visibility: visible;
+            position: unset;
+            
+          }
+          .icon-item {
+            margin-inline-end: 10px !important;
+          }
+        }
+      }
+    }
+  }
+}

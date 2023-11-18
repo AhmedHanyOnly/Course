@@ -74,6 +74,33 @@
 /* end navbar bottom */ 
 
 /* start navbar course */ 
-.navbar-course {
+.nav-app {
+  z-index: 1000;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  position: fixed;
+  inset-block-start: 0;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 8.3%);
+  width: 100%;
+  inset-inline-start: 0;
+  height: 64px;
+  background: #fff;
+  padding-block: 0.688rem;
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 40px;
+      width: auto;
+    }
+  }
+  @include maxWidth(sm) {
+    .logo {
+      height: 40px;
+      img {
+        height: 25px;
+      }
+    }
+  }
 }
 /* end navbar course */ 
