@@ -655,7 +655,6 @@ select:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   max-width: 460px;
   margin: auto;
   background-color: #fff;
@@ -675,54 +674,13 @@ select:focus {
   align-items: stretch;
   padding: 30px 50px;
 }
-.enrollColumn .programDetailsCard .detailsContainer .programPace {
-  font-size: 16px;
-  font-weight: 400;
-  color: #000;
-  margin-bottom: 10px;
-}
-.enrollColumn .programDetailsCard .detailsContainer .programDifficulty {
-  padding: 0 0 20px;
-}
-.enrollColumn .programDetailsCard .detailsContainer .programDifficulty .difficultyTitle {
-  font-size: 16px;
-  font-weight: 700;
-  color: #24343f;
-}
-.enrollColumn .programDetailsCard .detailsContainer .programDifficulty .difficulties {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.enrollColumn .programDetailsCard .detailsContainer .programDifficulty .difficulties .difficultyLabel {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-grow: 0;
-  flex-basis: 30%;
-  padding: 5px 10px;
-}
-.enrollColumn .programDetailsCard .detailsContainer .programDifficulty .difficulties .difficultyLabel .labelIcon {
-  width: 15px;
-  height: 15px;
-  margin-left: 10px;
-}
 .enrollColumn .programDetailsCard .detailsContainer .programDetailsBullets {
   padding: 0 5px;
   margin-bottom: 20px;
 }
 .enrollColumn .programDetailsCard .detailsContainer .programDetailsBullets ul .bulletItem {
-  list-style-type: disc;
   list-style-position: inside;
   margin: 5px auto;
-}
-.enrollColumn .programDetailsCard .detailsContainer .footerText {
-  text-align: center;
-  color: #6889a0;
-  font-size: 14px;
-  font-weight: 400;
-  margin-top: 15px;
 }
 
 .programEnrollCard {
