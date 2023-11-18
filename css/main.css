@@ -445,6 +445,7 @@ select:focus {
   font-size: 12px;
   font-weight: 700;
   line-height: 17px;
+  background-color: #fff;
 }
 .land-program .contentContainer .text-land {
   max-width: 450px;
@@ -457,6 +458,7 @@ select:focus {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
 .tabs {
   display: flex;
   -ms-flex-pack: start;
@@ -477,13 +479,174 @@ select:focus {
   margin: 0 10px;
 }
 
-.section-des {
+.section-text {
   padding: 30px 20px;
 }
-.section-des .title {
+.section-text .title {
   font-size: 24px;
   font-weight: 700;
   line-height: 35px;
+}
+.section-text .des-collapes {
+  transition: 0.3s;
+}
+.section-text .des-collapes .des {
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+}
+.section-text .des-collapes ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.section-text .des-collapes ul .listItem {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  margin: 15px auto;
+}
+.section-text .des-collapes ul .listItem .fa-arrow-left {
+  font-size: 24px;
+  color: #0ba7aa;
+  padding: 0 8px;
+}
+.section-text .syllabusItems .syllabusItem {
+  background-color: #edf2f6;
+  padding: 30px;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+.section-text .syllabusItems .syllabusItem .syllabusItemTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #24343f;
+}
+.section-text .syllabusItems .syllabusItem .syllabusItemDescription {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3f5767;
+}
+.section-text .programSectionContent .organizationContent {
+  display: flex;
+  margin: 10px auto;
+  gap: 20px;
+}
+.section-text .programSectionContent .organizationContent .logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  width: 30%;
+  box-shadow: 0 10px 30px 0 rgba(164, 192, 210, 0.22);
+}
+.section-text .programSectionContent .organizationContent .logoContainer img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+.section-text .programSectionContent .organizationContent .organizationDetails {
+  padding: 10px;
+}
+.section-text .programSectionContent .organizationContent .organizationDetails .organizationName {
+  font-size: 16px;
+  font-weight: 700;
+}
+.section-text .programSectionContent .organizationContent .organizationDetails .organizationDescription {
+  font-size: 14px;
+  font-weight: 400;
+}
+.section-text .teachers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+}
+.section-text .teachers .teacherCard {
+  background: #f0f4f9;
+  border-radius: 12px;
+  margin: 20px;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+.section-text .teachers .teacherCard img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+.section-text .teachers .teacherCard .teacherName {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.section-text .teachers .teacherCard .teacherTitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6889a0;
+  text-align: center;
+}
+.section-text .teachers .teacherCard .teacherBio {
+  padding-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: right;
+  width: 100%;
+}
+
+.programEnrollCard {
+  background-color: #0ba7aa;
+  padding: 36px 110px;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 100px;
+  color: #fff;
+}
+.programEnrollCard .title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.programEnrollCard .subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-collapes {
+  display: block;
+  transition: 0.3s;
+  padding: 6px 12px;
+  font-size: 12px;
+  user-select: none;
+  border-radius: 80px;
+  border: 1px solid #3f5767;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.applyBtn {
+  font-weight: 400;
+  color: #4c6373 !important;
+  background-color: #fff;
+  border-radius: 80px;
+  font-size: 18px;
+  padding: 10px 16px;
+  width: fit-content;
 }
 
 .login {

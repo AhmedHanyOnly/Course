@@ -143,6 +143,7 @@
       font-size: 12px;
       font-weight: 700;
       line-height: 17px;
+      background-color: #fff;
     }
     .text-land {
       max-width: 450px;
@@ -153,8 +154,6 @@
         line-height: 54px;
         margin-top: 20px;
         margin-bottom: 10px;
-      }
-      .heroDescription {
       }
     }
   }
@@ -178,11 +177,174 @@
     margin: 0 10px;
   }
 }
-.section-des {
+.section-text {
   padding: 30px 20px;
   .title {
     font-size: 24px;
     font-weight: 700;
     line-height: 35px;
   }
+  .des-collapes {
+    transition: 0.3s;
+    .des {
+      transition: 0.3s;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 29px;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      .listItem {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 18px;
+        margin: 15px auto;
+        .fa-arrow-left {
+          font-size: 24px;
+          color: $main-color;
+          padding: 0 8px;
+        }
+      }
+    }
+  }
+  .syllabusItems {
+    .syllabusItem {
+      background-color: #edf2f6;
+      padding: 30px;
+      border-radius: 4px;
+      margin: 10px auto;
+      .syllabusItemTitle {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        color: #24343f;
+      }
+      .syllabusItemDescription {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #3f5767;
+      }
+    }
+  }
+  .programSectionContent {
+    .organizationContent {
+      display: flex;
+      margin: 10px auto;
+      gap: 20px;
+      .logoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        padding: 15px;
+        border-radius: 12px;
+        width: 30%;
+        box-shadow: 0 10px 30px 0 rgba(164, 192, 210, 0.22);
+        img {
+          width: 100px;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+      .organizationDetails {
+        padding: 10px;
+        .organizationName {
+          font-size: 16px;
+          font-weight: 700;
+        }
+        .organizationDescription {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .teachers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    .teacherCard {
+      img {
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+      }
+      background: #f0f4f9;
+      border-radius: 12px;
+      margin: 20px;
+      display: inline-flex;
+      align-items: center;
+      flex-direction: column;
+      // width: 267px;
+      padding: 20px;
+      position: relative;
+      .teacherName {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+      }
+      .teacherTitle {
+        font-size: 16px;
+        font-weight: 400;
+        color: #6889a0;
+        text-align: center;
+      }
+      .teacherBio {
+        padding-top: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: right;
+        width: 100%;
+      }
+    }
+  }
+}
+.programEnrollCard {
+  background-color: $main-color;
+  padding: 36px 110px;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 100px;
+  color: #fff;
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .subtitle {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.btn-collapes {
+  display: block;
+  transition: 0.3s;
+  padding: 6px 12px;
+  font-size: 12px;
+  user-select: none;
+  border-radius: 80px;
+  border: 1px solid #3f5767;
+  padding: 10px 20px;
+  margin: 10px;
+}
+.applyBtn {
+  font-weight: 400;
+  color: #4c6373 !important;
+  background-color: #fff;
+  border-radius: 80px;
+  font-size: 18px;
+  padding: 10px 16px;
+  width: fit-content;
 }
