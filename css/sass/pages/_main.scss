@@ -1,0 +1,28 @@
+.land-program {
+  padding: 95px 0;
+  background-color: $main-color;
+  .contentContainer {
+    .textLabel {
+      background-color: rgb(239, 243, 245);
+      color: rgb(115, 136, 168);
+      border-radius: 4px;
+      padding: 3px 6px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 17px;
+    }
+    .text-land {
+      max-width: 450px;
+      color: #fff;
+      .heroTitle {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 54px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .heroDescription {
+      }
+    }
+  }
+}
