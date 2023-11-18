@@ -1,3 +1,4 @@
+/* start navbar top */ 
 .top-nav {
   background-color: $main-color;
   color: $white;
@@ -27,7 +28,9 @@
     gap: 20px;
   }
 }
+/* end navbar top */ 
 
+/* start navbar bottom */ 
 .bottom-nav {
   background-color: white !important;
   color: $text-color1;
@@ -68,3 +71,9 @@
     padding: 4px 11px;
   }
 }
+/* end navbar bottom */ 
+
+/* start navbar course */ 
+.navbar-course {
+}
+/* end navbar course */ 

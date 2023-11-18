@@ -18,3 +18,23 @@
       padding-right: 93px;
   }
 }
+
+.btn-transparent {
+  width: fit-content;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 6px 8px;
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: $sm-transition;
+  justify-content: center;
+  gap: 0.7rem;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    color: $main-color;
+  }
+}
