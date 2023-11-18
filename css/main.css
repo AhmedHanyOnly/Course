@@ -186,11 +186,17 @@
 }
 
 .main-text {
-  color: rgba(0, 0, 0, 0.6);
-  text-align: center;
-  font-size: 18px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 43px;
+  color: #24343F;
+}
+
+.sub-text {
+  font-size: 20px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 29px;
+  color: #4C6373;
 }
 
 .main-dropdown-menu {
@@ -767,6 +773,105 @@ select:focus {
 .applyBtn.main {
   background-color: #0ba7aa;
   color: #fff !important;
+}
+
+.nav-main-taps {
+  gap: 10px;
+}
+.nav-main-taps .nav-item .nav-link {
+  background-color: #fff;
+  border-radius: 80px;
+  color: #3f5767;
+  border: 1px solid #3f5767;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.nav-main-taps .nav-item .nav-link.active {
+  background-color: #0ba7aa;
+  color: #fff;
+  border-color: #0ba7aa;
+}
+
+.courses {
+  display: flex;
+  padding: 35px 0;
+  overflow-x: scroll;
+}
+.courses .linkComponent {
+  display: contents;
+}
+.courses .linkComponent .courseCard {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 267px;
+  min-width: 211px;
+  height: 290px;
+  margin: 0 15px;
+  box-shadow: 0 10px 30px 0 rgba(164, 192, 210, 0.22);
+  cursor: pointer;
+}
+.courses .linkComponent .courseCard .courseImg {
+  width: 100%;
+  height: 115px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.courses .linkComponent .courseCard .courseContent {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+}
+.courses .linkComponent .courseCard .courseContent .courseName {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.courses .linkComponent .courseCard .courseContent .textLabel {
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #4a90e2;
+  background-color: rgb(233, 246, 251);
+}
+.courses .textCard {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3459de;
+  border-radius: 12px;
+  width: 267px;
+  min-width: 211px;
+  height: 290px;
+  margin: 0 15px;
+  padding: 40px;
+  color: #fff;
+  box-shadow: 0 10px 30px 0 rgba(164, 192, 210, 0.22);
+  cursor: pointer;
+}
+.courses .textCard .text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+}
+.courses .textCard .close {
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
 }
 
 .login {
