@@ -1082,6 +1082,7 @@ select:focus {
   display: flex;
 }
 .app-sidebar .sidebar {
+  z-index: 999;
   display: flex;
   position: relative;
   flex-direction: column;

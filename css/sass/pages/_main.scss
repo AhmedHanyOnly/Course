@@ -502,6 +502,7 @@
   height: 100vh;
   display: flex;
   .sidebar {
+    z-index: 999;
     display: flex;
     position: relative;
     flex-direction: column;
