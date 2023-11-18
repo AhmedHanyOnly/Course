@@ -475,174 +475,6 @@ select:focus {
   outline: none;
 }
 
-.app-sidebar {
-  padding-block-start: 64px;
-  height: 100vh;
-  display: flex;
-}
-.app-sidebar .sidebar {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 400px;
-  border-inline-end: 1px solid rgba(0, 0, 0, 0.12);
-  transition: 0.3s;
-  border-radius: 8px;
-  background-color: #fff;
-}
-.app-sidebar .sidebar .toggle-side {
-  position: absolute;
-  inset-inline-start: 100%;
-  width: 30px;
-  top: 11px;
-  height: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  padding: 11px;
-  background-color: #fff;
-  border-top-left-radius: 110px;
-  border-bottom-left-radius: 110px;
-}
-.app-sidebar .sidebar .item-side {
-  padding: 17px 18px;
-}
-.app-sidebar .sidebar .item-side .title-side {
-  margin: 0;
-  font-size: 19px;
-  color: #000000;
-}
-.app-sidebar .sidebar .list-side {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  overflow-y: auto;
-  padding: 16px 6px;
-}
-.app-sidebar .sidebar .list-side .accordion-item {
-  overflow: hidden;
-  border: 0;
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.083);
-  border-radius: 8px;
-}
-.app-sidebar .sidebar .list-side .accordion-item .accordion-header {
-  padding: 0;
-}
-.app-sidebar .sidebar .list-side .accordion-item .accordion-header .icon-item {
-  width: 30px;
-  border: #0ba7aa dashed 2px;
-  height: 30px;
-  border-radius: 50%;
-  margin-inline-end: 18px;
-}
-.app-sidebar .sidebar .list-side .accordion-item .accordion-header .accordion-button {
-  box-shadow: none;
-  padding: 16px;
-}
-.app-sidebar .sidebar .list-side .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-  color: #0ba7aa;
-  background-color: rgba(11, 167, 170, 0.1294117647);
-}
-.app-sidebar .sidebar .list-side .accordion-item .accordion-body {
-  padding: 16px;
-}
-.app-sidebar .sidebar .list-side .accordion-item .accordion-body .content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.app-sidebar .sidebar .list-side .accordion-item .accordion-body .content .item-content {
-  overflow: hidden;
-  border: 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 16px;
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.083);
-  border-radius: 8px;
-}
-.app-sidebar .sidebar .list-side .accordion-item .accordion-body .content .item-content.active {
-  border: 3px solid #0ba7aa;
-}
-.app-sidebar .sidebar .list-side .accordion-item .accordion-body .content .item-content .icon {
-  color: #0ba7aa;
-}
-.app-sidebar .app-content {
-  flex: 1;
-  overflow-y: auto;
-  padding: 24px 52px;
-  background-color: #FAFAFA;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.app-sidebar .app-content .content {
-  flex: 1;
-}
-@media (max-width: 991.98px) {
-  .app-sidebar .sidebar {
-    width: 0px;
-  }
-  .app-sidebar .sidebar *:not(.toggle-side, .toggle-side *) {
-    visibility: hidden;
-  }
-  .app-sidebar .app-content {
-    padding: 12px;
-  }
-}
-.app-sidebar.active .sidebar {
-  width: 75px;
-}
-.app-sidebar.active .sidebar .item-side {
-  visibility: hidden;
-  position: absolute;
-}
-.app-sidebar.active .sidebar .main-hr {
-  visibility: hidden;
-  position: absolute;
-}
-.app-sidebar.active .sidebar .accordion-button::after {
-  visibility: hidden;
-  position: absolute;
-}
-.app-sidebar.active .sidebar .accordion-button *:not(.icon-item) {
-  visibility: hidden;
-  position: absolute;
-}
-.app-sidebar.active .sidebar .accordion-button .icon-item {
-  margin-inline-end: 0 !important;
-}
-@media (max-width: 991.98px) {
-  .app-sidebar.active .sidebar {
-    width: 75%;
-    position: fixed;
-    inset-inline-start: 0;
-    height: calc(100vh - 64px);
-    bottom: 0;
-  }
-  .app-sidebar.active .sidebar *:not(.toggle-side, .toggle-side *) {
-    visibility: visible;
-  }
-  .app-sidebar.active .sidebar .item-side {
-    visibility: visible;
-    position: unset;
-  }
-  .app-sidebar.active .sidebar .main-hr {
-    visibility: visible;
-    position: unset;
-  }
-  .app-sidebar.active .sidebar .accordion-button::after {
-    visibility: visible;
-    position: unset;
-  }
-  .app-sidebar.active .sidebar .accordion-button *:not(.icon-item) {
-    visibility: visible;
-    position: unset;
-  }
-  .app-sidebar.active .sidebar .accordion-button .icon-item {
-    margin-inline-end: 10px !important;
-  }
-}
-
 /* start navbar top */
 .top-nav {
   background-color: #0ba7aa;
@@ -931,6 +763,174 @@ select:focus {
   font-size: 24px;
   font-weight: 700;
   line-height: 35px;
+}
+
+.app-sidebar {
+  padding-block-start: 64px;
+  height: 100vh;
+  display: flex;
+}
+.app-sidebar .sidebar {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 400px;
+  border-inline-end: 1px solid rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.app-sidebar .sidebar .toggle-side {
+  position: absolute;
+  inset-inline-start: 100%;
+  width: 30px;
+  top: 11px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 11px;
+  background-color: #fff;
+  border-top-left-radius: 110px;
+  border-bottom-left-radius: 110px;
+}
+.app-sidebar .sidebar .item-side {
+  padding: 17px 18px;
+}
+.app-sidebar .sidebar .item-side .title-side {
+  margin: 0;
+  font-size: 19px;
+  color: #000000;
+}
+.app-sidebar .sidebar .list-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  padding: 16px 6px;
+}
+.app-sidebar .sidebar .list-side .accordion-item {
+  overflow: hidden;
+  border: 0;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.083);
+  border-radius: 8px;
+}
+.app-sidebar .sidebar .list-side .accordion-item .accordion-header {
+  padding: 0;
+}
+.app-sidebar .sidebar .list-side .accordion-item .accordion-header .icon-item {
+  width: 30px;
+  border: #0ba7aa dashed 2px;
+  height: 30px;
+  border-radius: 50%;
+  margin-inline-end: 18px;
+}
+.app-sidebar .sidebar .list-side .accordion-item .accordion-header .accordion-button {
+  box-shadow: none;
+  padding: 16px;
+}
+.app-sidebar .sidebar .list-side .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: #0ba7aa;
+  background-color: rgba(11, 167, 170, 0.1294117647);
+}
+.app-sidebar .sidebar .list-side .accordion-item .accordion-body {
+  padding: 16px;
+}
+.app-sidebar .sidebar .list-side .accordion-item .accordion-body .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.app-sidebar .sidebar .list-side .accordion-item .accordion-body .content .item-content {
+  overflow: hidden;
+  border: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.083);
+  border-radius: 8px;
+}
+.app-sidebar .sidebar .list-side .accordion-item .accordion-body .content .item-content.active {
+  border: 3px solid #0ba7aa;
+}
+.app-sidebar .sidebar .list-side .accordion-item .accordion-body .content .item-content .icon {
+  color: #0ba7aa;
+}
+.app-sidebar .app-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 52px;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app-sidebar .app-content .content {
+  flex: 1;
+}
+@media (max-width: 991.98px) {
+  .app-sidebar .sidebar {
+    width: 0px;
+  }
+  .app-sidebar .sidebar *:not(.toggle-side, .toggle-side *) {
+    visibility: hidden;
+  }
+  .app-sidebar .app-content {
+    padding: 12px;
+  }
+}
+.app-sidebar.active .sidebar {
+  width: 75px;
+}
+.app-sidebar.active .sidebar .item-side {
+  visibility: hidden;
+  position: absolute;
+}
+.app-sidebar.active .sidebar .main-hr {
+  visibility: hidden;
+  position: absolute;
+}
+.app-sidebar.active .sidebar .accordion-button::after {
+  visibility: hidden;
+  position: absolute;
+}
+.app-sidebar.active .sidebar .accordion-button *:not(.icon-item) {
+  visibility: hidden;
+  position: absolute;
+}
+.app-sidebar.active .sidebar .accordion-button .icon-item {
+  margin-inline-end: 0 !important;
+}
+@media (max-width: 991.98px) {
+  .app-sidebar.active .sidebar {
+    width: 75%;
+    position: fixed;
+    inset-inline-start: 0;
+    height: calc(100vh - 64px);
+    bottom: 0;
+  }
+  .app-sidebar.active .sidebar *:not(.toggle-side, .toggle-side *) {
+    visibility: visible;
+  }
+  .app-sidebar.active .sidebar .item-side {
+    visibility: visible;
+    position: unset;
+  }
+  .app-sidebar.active .sidebar .main-hr {
+    visibility: visible;
+    position: unset;
+  }
+  .app-sidebar.active .sidebar .accordion-button::after {
+    visibility: visible;
+    position: unset;
+  }
+  .app-sidebar.active .sidebar .accordion-button *:not(.icon-item) {
+    visibility: visible;
+    position: unset;
+  }
+  .app-sidebar.active .sidebar .accordion-button .icon-item {
+    margin-inline-end: 10px !important;
+  }
 }
 
 .login {
