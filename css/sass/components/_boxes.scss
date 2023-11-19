@@ -1,5 +1,6 @@
 .main-dropdown-menu {
-  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
   border: 0;
 }
 .enrollColumn {
@@ -39,6 +40,147 @@
             // list-style-type: disc;
             list-style-position: inside;
             margin: 5px auto;
+          }
+        }
+      }
+    }
+  }
+}
+// Prog
+.main-prog-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+  .prog {
+    flex: 1;
+    background-color: #eeeeee;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    .fill {
+      background-color: $main-color;
+      height: 100%;
+      display: block;
+    }
+  }
+}
+
+.educational-component {
+  margin-bottom: 1rem;
+  img {
+    width: 70px;
+    height: auto;
+  }
+}
+
+.video-app {
+  width: 100%;
+  height: 400px;
+}
+
+.group-info-text {
+  color: #808080;
+  font-size: 14px;
+  display: flex;
+  margin: 5px 0;
+  align-items: center;
+  gap: 20px;
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.list-danger {
+  list-style: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #c00000;
+  font-size: 14px;
+  font-weight: 600;
+}
+.card-check {
+  border-radius: 10px;
+  box-shadow: 0 11px 30px 0 rgba(0, 0, 0, 0.08);
+  background-color: white;
+  padding: 25px;
+  .head-card-check {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 1.5rem;
+    .title {
+      color: #393939;
+      font-size: 15px;
+    }
+    .grade {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #7f7f7f;
+      .num {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px #979797;
+        color: #979797;
+      }
+    }
+  }
+  .content {
+    margin-bottom: 1rem;
+  }
+  .group-check {
+    width: fit-content;
+    .btn-checkd {
+      position: relative;
+      width: 100%;
+      .text {
+        position: relative;
+        background-color: #f7f7f7;
+        border-radius: 22.5px;
+        margin: 0;
+        min-height: 46px;
+        min-width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        font-size: 14px;
+        color: #000809;
+        width: 100%;
+        cursor: pointer;
+        padding: 6px 20px;
+        z-index: 2;
+      }
+      input {
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        cursor: pointer;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: 1;
+        &:checked {
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: calc(100% + 3px);
+            height: calc(100% + 3px);
+            border-radius: 22.5px;
+            border: 3px solid #ffd13f;
           }
         }
       }
@@ -149,13 +291,13 @@
     }
   }
 }
-.main-box{
+.main-box {
   box-shadow: 0 0 10px #ddd;
   margin-top: 16px;
   background-color: #fff;
   padding: 20px;
 }
-.box-filter{
+.box-filter {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,22 +307,22 @@
   box-shadow: 0 0 10px #ddd;
   margin-top: 16px;
 }
-.course-holder{
+.course-holder {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  .card-course{
+  .card-course {
     width: 180px;
     padding: 10px;
     box-shadow: 0 0 10px #ddd;
-  
-    .img-card{
+
+    .img-card {
       position: relative;
-      img{
+      img {
         height: 130px;
         width: 160px;
       }
-      .paid{
+      .paid {
         position: absolute;
         left: 50%;
         top: 40%;
@@ -193,15 +335,15 @@
       }
     }
   }
-  .text-info{
-    .des{
+  .text-info {
+    .des {
       font-weight: 700;
       text-align: center;
       font-size: 14px;
       padding: 10px;
       margin: 0;
     }
-    .days{
+    .days {
       padding: 2px 35px;
       background-color: rgba($color: $main-color, $alpha: 0.5);
       color: #fff;

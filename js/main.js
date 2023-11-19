@@ -39,3 +39,14 @@ new Swiper(".customers-slider", {
     },
   },
 });
+
+// Click add active
+if (document.querySelector(".tog-active")) {
+  let togglesShow = document.querySelectorAll(".tog-active");
+  togglesShow.forEach((e) => {
+    e.addEventListener("click", (evt) => {
+      let divActive = document.querySelector(e.getAttribute("data-active"));
+      divActive.classList.toggle("active");
+    });
+  });
+}
