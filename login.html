@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>بتلات روز</title>
+    <title>Waja Hostals</title>
     <!-- Main Css Normalize File -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- Main Css Bootstrap RTL File -->
@@ -16,81 +15,273 @@
     <!-- Main Css File -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- Main Css Fonts File -->
-    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <!-- <link rel="stylesheet" href="fonts/stylesheet.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <!-- start login -->
-    <section class="login">
-      <div class="container-fluid">
-        <div class="row g-3 d-flex flex-column-reverse flex-lg-row">
-          <div class="col-12 col-lg-6 p-0">
-            <div class="land">
-              <img src="./images/land-login.png" alt="land" />
+    <!-- Start Nav -->
+    <nav class="navbar bottom-nav navbar-expand-lg">
+      <div class="container">
+        <span class="logo">
+          <img src="./images/logo.png" alt="" />
+        </span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./course-1.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">خدماتنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">حجز الوحدات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="flex-grow-0 collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <a href="" class="btn-nav"> تسجيل دخول</a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav -->
+    <section class="loginPage py-5">
+      <div class="container">
+        <div class="row login_box shadow-lg">
+          <div class="col-md-6 px-0">
+            <div class="image_holder shadow-sm">
+              <img src="./images/sm-logo.png" alt="login image" srcset="" />
             </div>
           </div>
-          <div class="col-12 col-lg-6 p-0">
-            <div class="container">
-              <div class="content">
-                <div class="logo">
-                  <img src="./images/logo.png" alt="loho" />
-                </div>
-                <div class="text">
-                  <h3>تسجيل الدخول</h3>
-                  <div class="login-text">
-                    <p>هل لديك حساب؟</p>
-                    <a href="./sign-up.html"> إنشاء حساب</a>
-                  </div>
-                </div>
-                <div class="form">
-                  <div class="box my-5">
-                    <input
-                      type="text"
-                      class="form-control my-2"
-                      name=""
-                      id=""
-                      placeholder="البريد الالكتروني "
-                    />
-                  </div>
-                  <div class="box my-5">
-                    <input
-                      type="password"
-                      class="form-control"
-                      name=""
-                      id=""
-                      placeholder="كلمة المرور"
-                    />
-                  </div>
-                  <div class="control-log d-flex justify-content-between">
-                    <div class="div d-flex gap-2 mb-4">
-                      <input type="checkbox" class="form-check m-0" />
-                      <label for="">تذكرني</label>
+          <div class="col-md-6 px-0">
+            <ul class="nav nav-login mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  تسجيل الدخول
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  انشاء حساب جديد
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+                tabindex="0"
+              >
+                <form class="login-form" action="" method="POST">
+                  <div class="login_content">
+                    <div class="inp_holder">
+                      <label for="" class="login-label"
+                        >البريد الاليكتروني</label
+                      >
+                      <input
+                        type="email"
+                        class="login-inp form-control"
+                        name="email"
+                      />
                     </div>
-                    <a href="#">نسيت كلمة المرور؟</a>
+                    <div class="inp_holder">
+                      <label for="" class="login-label">كلمة السر</label>
+                      <input
+                        type="password"
+                        class="login-inp form-control"
+                        name="password"
+                      />
+                    </div>
+                    <div class="btn_holder">
+                      <button class="btn login-btn">تسجيل الدخول</button>
+                    </div>
+                    <a
+                      href=""
+                      class="text-info text-center mt-4 fs-12px d-block"
+                    >
+                      نسيت كلمة السر؟
+                    </a>
                   </div>
-                  <button><a href="#"> تسجيل دخول</a></button>
-                </div>
+                </form>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+                tabindex="0"
+              >
+                <form class="login-form" action="" method="POST">
+                  <div class="login_content">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="inp_holder">
+                          <label for="" class="login-label">الاسم</label>
+                          <input
+                            type="email"
+                            class="login-inp form-control"
+                            name="email"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp_holder">
+                          <label for="" class="login-label">رقم الجوال </label>
+                          <input
+                            type="email"
+                            class="login-inp form-control"
+                            name="email"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-6">
+                        <div class="inp_holder">
+                          <label for="" class="login-label">كلمة السر</label>
+                          <input
+                            type="password"
+                            class="login-inp form-control"
+                            name="password"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp_holder">
+                          <label for="" class="login-label"
+                            >البريد الالكتروني
+                          </label>
+                          <input
+                            type="email"
+                            class="login-inp form-control"
+                            name="email"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp_holder">
+                          <label for="" class="login-label">الدولة </label>
+                          <select name="" id="" class="login-inp form-select">
+                            <option value="">اختر الدولة</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp_holder">
+                          <label for="" class="login-label">المدينة </label>
+                          <select name="" id="" class="login-inp form-select">
+                            <option value="">اختر المدينة</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp_holder mb-0">
+                          <label for="" class="login-label">النوع </label>
+                        </div>
+                     <div class="d-flex gap-3">
+                         <div class="inp_holder d-flex align-items-center gap-2">
+                           <input
+                             type="radio"
+                             name="type"
+                             id=""
+                             class="login-inp form-check"
+                           />
+                           <label for="" class="login-label form-check-label">ذكر </label>
+                         </div>
+                         <div class="inp_holder d-flex align-items-center gap-2">
+                           <input
+                             type="radio"
+                             name="type"
+                             id=""
+                             class="login-inp form-check"
+                           />
+                           <label for="" class="login-label form-check-label">انثي </label>
+                         </div>
+                     </div>
+                      </div>
+                    </div>
+
+                    <div class="btn_holder">
+                      <button class="btn login-btn">تسجيل الدخول</button>
+                    </div>
+                    <a
+                      href=""
+                      class="text-info text-center mt-4 fs-12px d-block"
+                    >
+                      نسيت كلمة السر؟
+                    </a>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- end login -->
-    <!-- aos file -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- <script>
-      var load = document.getElementById("loader");
-      window.addEventListener("load", () => {
-        load.style.display = "none";
-      });
-    </script> -->
-    <!-- Js Files -->
+
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="bar"></div>
+      <div class="footer-bottom">
+        <div class="container text-center">
+          جميع الحقوق محفوظة للموقع @ 2023
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Js Scripts -->
+    <!-- Main JS Bootstrap File -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS FontAwesome File -->
     <script src="js/all.min.js"></script>
+    <!-- Main JS Swiper File -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Main JS File -->
     <script src="js/main.js"></script>
   </body>
 </html>

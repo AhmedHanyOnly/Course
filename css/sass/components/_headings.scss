@@ -71,3 +71,13 @@
   color: #4C6373;
 
 }
+.main-head{
+  box-shadow: 0 0 10px #ddd;
+  border-right: 8px solid $main-color;
+  padding: 5px;
+  .title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+}

@@ -126,6 +126,66 @@
   color: #0ba7aa;
 }
 
+.btn-collapes {
+  display: block;
+  transition: 0.3s;
+  padding: 6px 12px;
+  font-size: 12px;
+  user-select: none;
+  border-radius: 80px;
+  border: 1px solid #3f5767;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.applyBtn {
+  font-weight: 400;
+  color: #4c6373 !important;
+  background-color: #fff;
+  border-radius: 80px;
+  font-size: 18px;
+  padding: 10px 16px;
+  width: fit-content;
+}
+.applyBtn.main {
+  background-color: #0ba7aa;
+  color: #fff !important;
+}
+
+.form-btn {
+  width: 100%;
+  background-color: #0ba7aa;
+  text-align: center;
+  color: #fff;
+  padding: 12px;
+  margin-top: 20px;
+  background-image: url(../images/bg-read.png);
+}
+
+.btn-filter {
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 16px;
+  flex-grow: 1;
+  border-radius: 4px;
+}
+.btn-filter .count {
+  border-radius: 50%;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ddd;
+}
+.btn-filter.blue {
+  background-color: #3f9ae5;
+}
+.btn-filter.red {
+  background-color: #d0211c;
+}
+.btn-filter.green {
+  background-color: #2fa360;
+}
+
 .main-title {
   font-weight: 700;
   font-size: 28px;
@@ -199,9 +259,226 @@
   color: #4C6373;
 }
 
+.main-head {
+  box-shadow: 0 0 10px #ddd;
+  border-right: 8px solid #0ba7aa;
+  padding: 5px;
+}
+.main-head .title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
 .main-dropdown-menu {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
   border: 0;
+}
+
+.enrollColumn {
+  position: relative;
+  top: -260px;
+}
+.enrollColumn .programDetailsCard {
+  position: sticky;
+  top: 50px;
+  z-index: 501;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 460px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 10px 30px 0 rgba(164, 192, 210, 0.22);
+  border-radius: 12px !important;
+}
+.enrollColumn .programDetailsCard .programImg {
+  height: 195px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.enrollColumn .programDetailsCard .detailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 30px 50px;
+}
+.enrollColumn .programDetailsCard .detailsContainer .programDetailsBullets {
+  padding: 0 5px;
+  margin-bottom: 20px;
+}
+.enrollColumn .programDetailsCard .detailsContainer .programDetailsBullets ul .bulletItem {
+  list-style-position: inside;
+  margin: 5px auto;
+}
+
+.programEnrollCard {
+  background-color: #0ba7aa;
+  padding: 36px 110px;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 100px;
+  color: #fff;
+}
+.programEnrollCard .title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.programEnrollCard .subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.courses {
+  display: flex;
+  padding: 35px 0;
+  overflow-x: scroll;
+}
+.courses .linkComponent {
+  display: contents;
+}
+.courses .linkComponent .courseCard {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 267px;
+  min-width: 211px;
+  height: 290px;
+  margin: 0 15px;
+  box-shadow: 0 10px 30px 0 rgba(164, 192, 210, 0.22);
+  cursor: pointer;
+}
+.courses .linkComponent .courseCard .courseImg {
+  width: 100%;
+  height: 115px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.courses .linkComponent .courseCard .courseContent {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+}
+.courses .linkComponent .courseCard .courseContent .courseName {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.courses .linkComponent .courseCard .courseContent .textLabel {
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #4a90e2;
+  background-color: rgb(233, 246, 251);
+}
+.courses .textCard {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3459de;
+  border-radius: 12px;
+  width: 267px;
+  min-width: 211px;
+  height: 290px;
+  margin: 0 15px;
+  padding: 40px;
+  color: #fff;
+  box-shadow: 0 10px 30px 0 rgba(164, 192, 210, 0.22);
+  cursor: pointer;
+}
+.courses .textCard .text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+}
+.courses .textCard .close {
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.main-box {
+  box-shadow: 0 0 10px #ddd;
+  margin-top: 16px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.box-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ddd;
+  margin-top: 16px;
+}
+
+.course-holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.course-holder .card-course {
+  width: 180px;
+  padding: 10px;
+  box-shadow: 0 0 10px #ddd;
+}
+.course-holder .card-course .img-card {
+  position: relative;
+}
+.course-holder .card-course .img-card img {
+  height: 130px;
+  width: 160px;
+}
+.course-holder .card-course .img-card .paid {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%);
+  background-color: rgba(11, 167, 170, 0.9);
+  padding: 3px 8px;
+  color: #fff;
+  z-index: 999;
+  border-radius: 3px;
+}
+.course-holder .text-info .des {
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  margin: 0;
+}
+.course-holder .text-info .days {
+  padding: 2px 35px;
+  background-color: rgba(11, 167, 170, 0.5);
+  color: #fff;
+  text-align: center;
+  margin: 12px 0 !important;
 }
 
 .inp {
@@ -644,95 +921,6 @@ select:focus {
   width: 100%;
 }
 
-.enrollColumn {
-  position: relative;
-  top: -260px;
-}
-.enrollColumn .programDetailsCard {
-  position: sticky;
-  top: 50px;
-  z-index: 501;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 460px;
-  margin: auto;
-  background-color: #fff;
-  box-shadow: 0 10px 30px 0 rgba(164, 192, 210, 0.22);
-  border-radius: 12px !important;
-}
-.enrollColumn .programDetailsCard .programImg {
-  height: 195px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-}
-.enrollColumn .programDetailsCard .detailsContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  padding: 30px 50px;
-}
-.enrollColumn .programDetailsCard .detailsContainer .programDetailsBullets {
-  padding: 0 5px;
-  margin-bottom: 20px;
-}
-.enrollColumn .programDetailsCard .detailsContainer .programDetailsBullets ul .bulletItem {
-  list-style-position: inside;
-  margin: 5px auto;
-}
-
-.programEnrollCard {
-  background-color: #0ba7aa;
-  padding: 36px 110px;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 12px;
-  margin-bottom: 100px;
-  color: #fff;
-}
-.programEnrollCard .title {
-  font-size: 32px;
-  font-weight: 700;
-}
-.programEnrollCard .subtitle {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.btn-collapes {
-  display: block;
-  transition: 0.3s;
-  padding: 6px 12px;
-  font-size: 12px;
-  user-select: none;
-  border-radius: 80px;
-  border: 1px solid #3f5767;
-  padding: 10px 20px;
-  margin: 10px;
-}
-
-.applyBtn {
-  font-weight: 400;
-  color: #4c6373 !important;
-  background-color: #fff;
-  border-radius: 80px;
-  font-size: 18px;
-  padding: 10px 16px;
-  width: fit-content;
-}
-.applyBtn.main {
-  background-color: #0ba7aa;
-  color: #fff !important;
-}
-
 .nav-main-taps {
   gap: 10px;
 }
@@ -750,195 +938,159 @@ select:focus {
   border-color: #0ba7aa;
 }
 
-.courses {
-  display: flex;
-  padding: 35px 0;
-  overflow-x: scroll;
-}
-.courses .linkComponent {
-  display: contents;
-}
-.courses .linkComponent .courseCard {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-color: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  width: 267px;
-  min-width: 211px;
-  height: 290px;
-  margin: 0 15px;
-  box-shadow: 0 10px 30px 0 rgba(164, 192, 210, 0.22);
-  cursor: pointer;
-}
-.courses .linkComponent .courseCard .courseImg {
-  width: 100%;
-  height: 115px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.courses .linkComponent .courseCard .courseContent {
+.side-profile .avatar {
   padding: 20px;
+  box-shadow: 0 0 10px #ddd;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: column;
-  flex: 1;
-}
-.courses .linkComponent .courseCard .courseContent .courseName {
-  font-size: 18px;
-  margin: 10px 0;
-  font-weight: 500;
-  line-height: 1.1;
-}
-.courses .linkComponent .courseCard .courseContent .textLabel {
-  border-radius: 4px;
-  padding: 3px 6px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 17px;
-  color: #4a90e2;
-  background-color: rgb(233, 246, 251);
-}
-.courses .textCard {
-  display: inline-flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #3459de;
-  border-radius: 12px;
-  width: 267px;
-  min-width: 211px;
-  height: 290px;
-  margin: 0 15px;
-  padding: 40px;
+}
+.side-profile .avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 3px dotted #0ba7aa;
+}
+.side-profile .title-name {
+  padding: 10px 12px;
+  margin: 30px 0;
+  background-color: #0ba7aa;
+}
+.side-profile .title-name .name {
   color: #fff;
-  box-shadow: 0 10px 30px 0 rgba(164, 192, 210, 0.22);
-  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
 }
-.courses .textCard .text {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21px;
-  color: #fff;
-  text-align: center;
-  margin: 10px 0;
+.side-profile .taps-control {
+  padding: 10px 0;
+  box-shadow: 0 0 10px #ddd;
 }
-.courses .textCard .close {
-  font-size: 20px;
-  color: #fff;
-  background-color: transparent;
+.side-profile .taps-control ul {
+  display: flex;
+  flex-direction: column;
 }
-
-.login {
-  min-height: 100vh;
+.side-profile .taps-control ul .main-tap {
+  padding: 5px 10px;
 }
-.login .land {
-  position: relative;
-  z-index: 1;
+.side-profile .taps-control ul .main-tap .icon {
+  color: #0ba7aa;
 }
-.login .land::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  z-index: -1;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(219, 144, 105, 0.3);
-}
-.login .land img {
-  width: 100%;
-}
-.login .logo {
-  width: 274px;
-  padding: 20px;
-  margin-right: 80px;
-}
-.login .logo img {
-  width: 100%;
-}
-.login .text {
-  margin-right: 100px;
-}
-.login .text h3 {
-  font-family: Cairo;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 60px;
-  letter-spacing: 0em;
-  text-align: right;
-  color: #000;
-}
-.login .text .login-text {
+.side-profile .taps-control ul .main-tap a {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
-.login .text .login-text p {
-  font-family: Cairo;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: 0px;
-  text-align: right;
-}
-.login .text .login-text a {
-  font-family: Cairo;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0px;
-  text-align: right;
-  color: #0ba7aa;
-  text-decoration: underline;
-}
-.login .form {
-  padding: 20px 100px;
-}
-.login .form input {
-  padding: 20px;
-  margin: 15px 0;
-}
-.login .form button {
-  width: 100%;
+.side-profile .taps-control ul .main-tap:hover {
   background-color: #0ba7aa;
-  padding: 10px;
-  border-radius: 5px;
 }
-.login .form button a {
+.side-profile .taps-control ul .main-tap:hover a {
   color: #fff;
-  font-weight: 400;
-  font-size: 18px;
+}
+.side-profile .taps-control ul .main-tap:hover .icon {
+  color: #fff;
+}
+
+.loginPage {
+  min-height: 80vh;
+  width: 100%;
+  min-height: calc(100vh - 155px - 463.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 991.98px) {
+  .loginPage .login_box {
+    width: 100% !important;
+  }
 }
 @media (max-width: 767.98px) {
-  .login .logo {
-    width: 274px;
-    padding: 20px;
-    margin-right: 10px;
+  .loginPage .login_box {
+    width: 80% !important;
   }
-  .login .logo img {
-    width: 100%;
+  .loginPage .login_box .image_holder img {
+    border-radius: 15px 15px 0px 0 !important;
   }
-  .login .text {
-    margin-right: 30px;
-  }
-  .login .text h3 {
-    font-size: 24px;
-  }
-  .login .text .login-text p {
-    font-size: 12px;
-  }
-  .login .text .login-text a {
-    font-size: 12px;
-  }
-  .login .form {
-    padding: 20px;
-  }
-  .login .form button a {
-    font-size: 14px;
-  }
+}
+.loginPage .login_box {
+  min-height: 380px;
+  background-color: white;
+  border-radius: 15px;
+  width: 70%;
+  margin: auto;
+}
+.loginPage .login_box .image_holder {
+  width: 100%;
+  height: 100%;
+}
+.loginPage .login_box .image_holder img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 15px 15px 0;
+  object-fit: cover;
+}
+.loginPage .login_box .login-form {
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 0px;
+}
+.loginPage .login_box .login-form .login_content {
+  margin-bottom: 20px;
+}
+.loginPage .login_box .login-form .login_content .title {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+.loginPage .login_box .login-form .login_content .inp_holder {
+  margin-bottom: 15px;
+}
+.loginPage .login_box .login-form .login_content .inp_holder .login-label {
+  margin-bottom: 6px;
+  font-size: 11px;
+  color: #959595;
+  font-weight: 600;
+}
+.loginPage .login_box .login-form .login_content .inp_holder .login-inp {
+  padding: 5px 50px !important;
+  border-radius: 6px;
+}
+.loginPage .login_box .login-form .login_content .btn_holder .login-btn {
+  transition: 0.4s;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  padding: 0.5rem 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  border-radius: 80px;
+  background: linear-gradient(260deg, #0ba7aa, #1168cb);
+}
+.loginPage .login_box .login-form .login_content .btn_holder .login-btn:hover {
+  background-color: #01abda;
+}
+
+.nav-login {
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.nav-login .nav-item .nav-link {
+  background: linear-gradient(260deg, #0ba7aa, #1168cb);
+  width: 140px;
+  color: #fff;
+  height: 42px;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 23px;
+}
+.nav-login .nav-item .nav-link.active {
+  background: #0ba7aa !important;
 }
 
 .footer {

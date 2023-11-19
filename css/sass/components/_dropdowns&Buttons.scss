@@ -15,7 +15,7 @@
   line-height: normal;
   &.xl {
     padding-left: 93px;
-      padding-right: 93px;
+    padding-right: 93px;
   }
 }
 
@@ -36,5 +36,63 @@
   &:hover {
     background-color: rgba(0, 0, 0, 0.04);
     color: $main-color;
+  }
+}
+.btn-collapes {
+  display: block;
+  transition: 0.3s;
+  padding: 6px 12px;
+  font-size: 12px;
+  user-select: none;
+  border-radius: 80px;
+  border: 1px solid #3f5767;
+  padding: 10px 20px;
+  margin: 10px;
+}
+.applyBtn {
+  font-weight: 400;
+  color: #4c6373 !important;
+  background-color: #fff;
+  border-radius: 80px;
+  font-size: 18px;
+  padding: 10px 16px;
+  width: fit-content;
+  &.main {
+    background-color: $main-color;
+    color: #fff !important;
+  }
+}
+.form-btn{
+  width: 100%;
+  background-color: $main-color;
+  text-align: center;
+  color: #fff;
+  padding: 12px;
+  margin-top: 20px;
+  background-image: url(../images/bg-read.png);
+  
+}
+
+.btn-filter{
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 16px;
+  flex-grow: 1;
+  border-radius: 4px;
+  .count{
+    border-radius: 50%;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #ddd;
+  }
+  &.blue{
+    background-color: #3f9ae5;
+  }
+  &.red{
+    background-color: #d0211c;
+  }
+  &.green{
+    background-color: #2fa360;
   }
 }

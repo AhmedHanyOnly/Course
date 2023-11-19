@@ -1,101 +1,108 @@
-.login {
-  min-height: 100vh;
-  .land {
-    @include overlay-before(#DB9069, 0.3);
-    img {
-      width: 100%;
-    }
-  }
-  .logo {
-    width: 274px;
-    padding: 20px;
-    margin-right: 80px;
-    img {
-      width: 100%;
-    }
-  }
-  .text {
-    margin-right: 100px;
-    h3 {
-      font-family: Cairo;
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 60px;
-      letter-spacing: 0em;
-      text-align: right;
-      color: #000;
-    }
-    .login-text {
-      display: flex;
-      gap: 10px;
-      p {
-        font-family: Cairo;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 30px;
-        letter-spacing: 0px;
-        text-align: right;
-      }
-      a {
-        font-family: Cairo;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: 0px;
-        text-align: right;
-        color: $main-color;
-        text-decoration: underline;
-      }
-    }
-  }
-  .form {
-    padding: 20px 100px;
-    input {
-      padding: 20px;
-      margin: 15px 0;
-    }
-    button {
-      width: 100%;
-      background-color: $main-color;
-      padding: 10px;
-      border-radius: 5px;
-      a {
-        color: #fff;
-        font-weight: 400;
-        font-size: 18px;
-      }
+// Start Login And Reseat
+.loginPage {
+  min-height: 80vh;
+  @include maxWidth(md) {
+    .login_box {
+      width: 100% !important;
     }
   }
   @include maxWidth(sm) {
-    .logo {
-      width: 274px;
-      padding: 20px;
-      margin-right: 10px;
+    .login_box {
+      width: 80% !important;
+      .image_holder {
+        img {
+          border-radius: 15px 15px 0px 0 !important;
+        }
+      }
+    }
+  }
+  width: 100%;
+  min-height: calc(100vh - 155px - 463.38);
+  // min-height: 100vh ;
+
+  @include centering;
+  .login_box {
+    min-height: 380px;
+    background-color: white;
+    border-radius: 15px;
+    width: 70%;
+    margin: auto;
+    .image_holder {
+      width: 100%;
+      height: 100%;
       img {
         width: 100%;
+        height: 100%;
+        border-radius: 0px 15px 15px 0;
+        object-fit: cover;
       }
     }
-    .text {
-      margin-right: 30px;
-      h3 {
-        font-size: 24px;
-      }
-      .login-text {
-        p {
-          font-size: 12px;
+    .login-form {
+      padding: 2.5rem;
+      @include centering;
+      height: 100%;
+      padding-top: 0px;
+
+      .login_content {
+        margin-bottom: 20px;
+        .title {
+          margin-bottom: 1rem;
+          font-size: 16px;
+          font-weight: 600;
         }
-        a {
-          font-size: 12px;
+        .inp_holder {
+          margin-bottom: 15px;
+          .login-label {
+            margin-bottom: 6px;
+            font-size: 11px;
+            color: #959595;
+            font-weight: 600;
+          }
+          .login-inp {
+            padding: 5px 50px !important;
+            border-radius: 6px;
+          }
         }
-      }
-    }
-    .form {
-      padding: 20px;
-      button {
-        a {
-          font-size: 14px;
+        .btn_holder {
+          .login-btn {
+            transition: 0.4s;
+            width: 100%;
+            color: white;
+            text-align: center;
+            margin-top: 15px;
+            padding: 0.5rem 1rem;
+            line-height: 1.25rem;
+            font-weight: 500;
+            border-radius: 80px;
+            background: linear-gradient(260deg, $main-color, #1168cb);
+            &:hover {
+              background-color: #01abda;
+            }
+          }
         }
       }
     }
   }
 }
+.nav-login {
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  .nav-item {
+    .nav-link {
+      background: linear-gradient(260deg, $main-color, #1168cb);
+      width: 140px;
+      color: #fff;
+      height: 42px;
+      border-radius: 10px;
+      justify-content: center;
+      font-size: 14px;
+      line-height: 23px;
+      &.active {
+        background: $main-color !important;
+      }
+    }
+  }
+}
+
+// End Login And Reseat
